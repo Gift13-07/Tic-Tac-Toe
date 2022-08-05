@@ -8,7 +8,7 @@
 }
 #selection{
     justify-content: center;
-    color:darkorchid;
+    color:darkcyan;
     text-align: center;
     border: 3px solid white;
     border-radius: 10px; 
@@ -16,13 +16,14 @@
     height: 30px;
     margin: auto;
     margin-bottom: 10px;
+    padding: 5px;
 }
 body{
     background-color: darkorange;
 }
 .box{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background: darkblue;
     display: flex;
     margin: 2px 2px 2px 2px;
@@ -41,7 +42,8 @@ body{
 }
 
 button{
-    width: 300px;
+    width: 280px;
     height: 40px;
     border-radius: 10px;
+    cursor: pointer;
 }
