@@ -22,17 +22,17 @@ body{
     background-color: darkorange;
 }
 .box{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: darkblue;
     display: flex;
-    margin: 2px 2px 2px 2px;
+    margin: 1px 1px 1px 1px;
 }
 .boxes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0.5px;
+    margin: 0.1px;
 }
 
 .button{
