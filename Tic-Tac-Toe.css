@@ -1,0 +1,47 @@
+#heading{
+    justify-content: center;
+    background-color:black;
+    text-align: center;
+    color: tomato;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#selection{
+    justify-content: center;
+    color:darkorchid;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px; 
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+body{
+    background-color: darkorange;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: darkblue;
+    display: flex;
+    margin: 2px 2px 2px 2px;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
