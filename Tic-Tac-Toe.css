@@ -1,4 +1,4 @@
-#heading{
+#title{
     justify-content: center;
     background-color:black;
     text-align: center;
@@ -6,7 +6,7 @@
     margin-left: 200px;
     margin-right: 200px;
 }
-#selection{
+#display{
     justify-content: center;
     color:darkcyan;
     text-align: center;
