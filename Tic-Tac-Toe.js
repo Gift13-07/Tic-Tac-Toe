@@ -26,4 +26,7 @@ for(let box of boxes){
     });
 }
 
-let controlBtn = document.getElementById("controlBtn")
+let controlBtn = document.getElementById("controlBtn");
+controlBtn.addEventListener("click", () => {
+    window.location.href = "Tic-Tac-Toe.html"
+});
