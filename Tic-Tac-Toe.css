@@ -24,9 +24,11 @@ body{
 .box{
     width: 70px;
     height: 70px;
-    background: darkblue;
+    background: tomato;
     display: flex;
     margin: 1px 1px 1px 1px;
+    justify-content: center;
+    align-items: center;
 }
 .boxes{
     display: flex;
