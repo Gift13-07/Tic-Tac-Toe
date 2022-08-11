@@ -47,3 +47,23 @@ function checker(first, second, third){
         disabledButtonsWhenGameIsWon("Player 2");
     }
 }
+
+function checkGameStatus() {
+    checker(0, 1, 2);
+    checker(3, 4, 5);
+    checker(6, 7, 8);
+    checker(0, 3, 6);
+    checker(1, 4, 7);
+    checker(2, 5, 8);
+    checker(0, 4, 8);
+    checker(2, 4, 6);
+}
+
+function disabledButtonsWhenGameIsWon(player) {
+    for(let box of boxes) {
+        if (box.textContent === "") {
+            box.toggleAttribute("disabled")
+        }
+    }
+    display.textContent = player + "won the game";
+}
