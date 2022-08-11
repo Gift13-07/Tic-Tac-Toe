@@ -63,6 +63,7 @@ function disabledButtonsWhenGameIsWon(player) {
     for(let box of boxes) {
         if (box.textContent === "") {
             box.toggleAttribute("disabled")
+            // box.addEventListener("click", ()=>{});
         }
     }
     display.textContent = player +" won the game";
