@@ -65,5 +65,14 @@ function disabledButtonsWhenGameIsWon(player) {
             box.toggleAttribute("disabled")
         }
     }
-    display.textContent = player + "won the game";
+    display.textContent = player +" won the game";
+}
+
+function checkDraw(){
+    for (let box of boxes) {
+        if (box.textContent === "") {
+            return;
+        }
+    }
+    display.textContent = "Draw";
 }
