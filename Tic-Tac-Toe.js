@@ -7,7 +7,7 @@ let boxes = document.querySelectorAll(".box");
 for(let box of boxes){
     box.addEventListener("click", () => {
         if(box.textContent !=="") {
-            return
+            return;
         }
 
         if (lastValue === "O"){
@@ -15,13 +15,13 @@ for(let box of boxes){
             lastValue = "X";
             display.textContent = "Player 2's turn to play";
             checkGameStatus();
-            checkDraw();
+            //checkDraw();
         } else{
             box.textContent = "O";
             lastValue = "O";
             display.textContent = "Player 1's turn to play";
             checkGameStatus();
-            checkDraw();
+            //checkDraw();
         }
     });
 }
@@ -33,19 +33,25 @@ controlBtn.addEventListener("click", () => {
 
 
 function checker(first, second, third){
+    if(display.textContent.includes("won the game")){
+        return;
+    }
     if(
         boxes[first].textContent === "X" &&
         boxes[second].textContent === "X" &&
         boxes[third].textContent === "X" 
     ) {
-        disabledButtonsWhenGameIsWon("Player 1");
+        disableButtonsWhenGameIsWon("Player 1");
     } else if (
         boxes[first].textContent === "O" &&
         boxes[second].textContent === "O" &&
         boxes[third].textContent === "O"
     ) {
-        disabledButtonsWhenGameIsWon("Player 2");
+        disableButtonsWhenGameIsWon("Player 2");
     }
+    else {
+        checkDraw()
+    } 
 }
 
 function checkGameStatus() {
@@ -59,7 +65,7 @@ function checkGameStatus() {
     checker(2, 4, 6);
 }
 
-function disabledButtonsWhenGameIsWon(player) {
+function disableButtonsWhenGameIsWon(player) {
     for(let box of boxes) {
         if (box.textContent === "") {
             box.toggleAttribute("disabled")
